@@ -56,7 +56,7 @@ GenerateMonthlyPayslip "Mary Song" 60000
 
 1. Install testing framework Jest
 ```
-npm install -D jest
+npm install
 ```
 2. Run test
 ```
