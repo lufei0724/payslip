@@ -14,14 +14,12 @@ The project structure is shown as per below.
 
 ```
 src
-|
---components     
-  |
-	|--payslip   # Payslip calculation and format 
-  |
-	|--tax       # Tax data access and tax calculation
---libs		     # Libraries
-  app.js       # App entry point
++-- components     
+|   +-- payslip   # Payslip calculation and format 
+|   +-- tax       # Tax data access and tax calculation
++-- libs		  # Libraries
++-- app.js        # App entry point
+
 ```
 
 ### Component layer
@@ -40,11 +38,12 @@ Then we add the tax amount at each rate level up to get annual income tax.
 
 ## How to run code
 
-1. install Node.js
+1. Install Node.js
 2. Unzip payslip.zip file into a folder
 3. Open a terminal or windows command and navigate to the directory where payslip is unzipped
 4. Install application
 ```
+npm install
 npm install -g .
 ```
 5. Run application
@@ -57,7 +56,7 @@ GenerateMonthlyPayslip "Mary Song" 60000
 
 1. Install testing framework Jest
 ```
-npm install
+npm install -D jest
 ```
 2. Run test
 ```
@@ -66,7 +65,7 @@ npm run test
 
 ## Assumptions && trade-offs
   - Assumptions
-     - The application needs to be run from command line from anywhere on user's system
+     - The application can be run from command line from anywhere by GenerateMonthlyPayslip command on user's system
      - The employee name must be entered
      - The annual salary must be entered and must not be negative
      - The gross monthly income and monthly income tax are rounding to 2 decimal places if necessary

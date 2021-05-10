@@ -16,8 +16,5 @@
   },
   "jest": {
     "testEnvironment": "node"
-  },
-  "dependencies": {
-    "g": "^2.0.1"
   }
 }
