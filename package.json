@@ -1,0 +1,20 @@
+{
+  "name": "payslip",
+  "version": "1.0.0",
+  "description": "Given employee annual salary outputs a monthly pay slip",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --verbose --runInBand --coverage"
+  },
+  "bin": {
+    "generateMonthlyPayslip": "./src/app.js"
+  },
+  "author": "Matt",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
