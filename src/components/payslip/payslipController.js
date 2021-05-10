@@ -1,6 +1,6 @@
 "use strict";
 const { calcMonthlyPayslip } = require("./payslipService");
-const { validateName } = require("../validator");
+const { validateName } = require("../../libs/validator");
 
 /**
  * Output payslip to a formatted string.

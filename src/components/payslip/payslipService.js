@@ -1,7 +1,7 @@
 "use strict";
 const { taxCalculator } = require("../tax");
 const { roundToTwo } = require("../../libs/round");
-const { validateSalary } = require("../validator");
+const { validateSalary } = require("../../libs/validator");
 
 /** @constant {number} */
 const MONTHS_IN_A_YEAR = 12;

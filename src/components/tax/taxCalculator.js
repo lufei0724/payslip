@@ -1,6 +1,6 @@
 "use strict";
 const { getTaxRates } = require("./taxDAL");
-const { validateSalary } = require("../validator");
+const { validateSalary } = require("../../libs/validator");
 
 /**
  * Compare annual salary and a tax rate to calculate applicable tax amount at the tax rate level.
