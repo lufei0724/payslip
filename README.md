@@ -14,14 +14,14 @@ The project structure is shown as per below.
 
 ```
 src
-│
-└───components     
-	|
-	└───payslip   # Payslip calculation and format 
-	│
-	└───tax       # Tax data access and tax calculation
-└───libs		  # Libraries
-   	app.js        # App entry point
+|
+--components     
+  |
+	|--payslip   # Payslip calculation and format 
+  |
+	|--tax       # Tax data access and tax calculation
+--libs		     # Libraries
+  app.js       # App entry point
 ```
 
 ### Component layer
