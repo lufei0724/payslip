@@ -5,7 +5,9 @@ const { payslipController } = require("./components/payslip");
 try {
   let args = process.argv.slice(2);
   if (!args[0] || !args[1]) {
-    throw new Error("Usage: npm start <employee name> <annual salary>");
+    throw new TypeError(
+      "Usage: GenerateMonthlyPayslip <employee name> <annual salary>"
+    );
   }
   const payslip = payslipController.genMonthlyPayslip({
     name: args[0],
@@ -13,5 +15,9 @@ try {
   });
   console.log(payslip);
 } catch (error) {
-  console.log(error.message);
+  if (error instanceof TypeError) {
+    console.log(error.message);
+  } else {
+    console.log(error);
+  }
 }

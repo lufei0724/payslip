@@ -1,30 +1,32 @@
 "use strict";
 
+const { Type } = require("js-yaml");
+
 const validateName = (name) => {
   if (name === undefined) {
-    throw new Error("Name is required.");
+    throw new TypeError("Name is required.");
   }
 
   if (typeof name !== "string") {
-    throw new Error("Name should be a string.");
+    throw new TypeError("Name should be a string.");
   }
 
   if (name.length === 0) {
-    throw new Error("Name should not be blank");
+    throw new TypeError("Name should not be blank");
   }
 };
 
 const validateSalary = (salary) => {
   if (salary === undefined) {
-    throw new Error("Annual salary is required.");
+    throw new TypeError("Annual salary is required.");
   }
 
   if (isNaN(salary)) {
-    throw new Error("Annual salary must be a number");
+    throw new TypeError("Annual salary must be a number");
   }
 
   if (salary < 0) {
-    throw new Error("Annual salary must not be less than 0");
+    throw new TypeError("Annual salary must not be less than 0");
   }
 };
 

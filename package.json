@@ -7,7 +7,7 @@
     "test": "jest --verbose --runInBand --coverage"
   },
   "bin": {
-    "generateMonthlyPayslip": "./src/app.js"
+    "GenerateMonthlyPayslip": "./src/app.js"
   },
   "author": "Matt",
   "license": "MIT",
@@ -16,5 +16,8 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "g": "^2.0.1"
   }
 }

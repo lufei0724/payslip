@@ -128,6 +128,30 @@ describe("payslipService", () => {
       });
     });
 
+    describe("with annual salary 20000.99", () => {
+      const salary = 20000.99;
+      it("should have grossMonthlyIncome equal 1666.67", () => {
+        expect(payslipService.calcMonthlyPayslip(salary)).toHaveProperty(
+          "grossMonthlyIncome",
+          1666.75
+        );
+      });
+
+      it("should have monthlyIncomeTax equal 0", () => {
+        expect(payslipService.calcMonthlyPayslip(salary)).toHaveProperty(
+          "monthlyIncomeTax",
+          0
+        );
+      });
+
+      it("should have netMonthlyIncome equal 1666.67", () => {
+        expect(payslipService.calcMonthlyPayslip(salary)).toHaveProperty(
+          "netMonthlyIncome",
+          1666.75
+        );
+      });
+    });
+
     describe("with annual salary 20001", () => {
       const salary = 20001;
       it("should have grossMonthlyIncome equal 1666.75", () => {

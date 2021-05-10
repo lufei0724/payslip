@@ -34,7 +34,7 @@ const calcApplicableTax = (salary, taxRate) => {
  */
 const annualIncomeTax = (salary) => {
   validateSalary(salary);
-  let taxRates = getTaxRates();
+  const taxRates = getTaxRates();
   return taxRates
     .map((taxRate) => calcApplicableTax(salary, taxRate))
     .reduce((a, b) => a + b);
