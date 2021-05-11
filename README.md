@@ -40,8 +40,12 @@ Then we add the tax amount at each rate level up to get annual income tax.
 
 1. Install Node.js
 2. Unzip payslip.zip file into a folder
-3. Open a terminal or windows command and navigate to the directory where payslip is unzipped
-4. Install application
+3. Or download the project from Github
+```
+git clone https://github.com/Mattlu88/payslip.git
+```
+4. Open a terminal or windows command and navigate to the directory where the project is unzipped or downloaded
+5. Install application
 ```
 npm install
 npm install -g .
